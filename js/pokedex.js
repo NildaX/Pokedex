@@ -6,7 +6,7 @@ const fetchPokemon = () => {
     fetch(url).then((res) => {
         if (res.status != "200") {
             console.log(res);
-            pokeImage("./pokemon-sad.gif")
+            pokeImage("/Pokedex/assets/images/pokemon-sad.jpg")
         }
         else {
             return res.json();
