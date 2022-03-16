@@ -25,37 +25,50 @@
         <h1>Pokedex LaunchX</h1>
         <div class="row">
             <div class="col-6 alargado">
-                <div class="row">
+                <div class="row espacior">
                     <input type="text" class="entradas" id="name" name="name" value="Charizard">
                 </div>
-                <div class="row">
+                <div class="row espacior">
                     <img src="/Pokedex/assets/images/pokeball.png" class="entradas imgpoke" alt="Pokemon" id="pokeImg" width="150px">
                 </div>
-                <div class="row">
+                <div class="row espacior">
                     <input type="text" class="entradas" id="numero" name="numero" value="#001">
                 </div>
-                <div class="row">
-                    <div class="col-6" >
-                        <input type="text" class="entradas" placeholder="pikachu" id="pokeName" name="pokeName">
-                    </div>
-                    <div class="col-6" >
-                        <button onclick="fetchPokemon()">Cambiar Imágen</button>
+                <div class="row espacior">
+                    <div class="container izquierdo" >
+                        <input type="text" class="entradas2" placeholder="pikachu" id="pokeName" name="pokeName">
+                        <button onclick="fetchPokemon()" class="boton">Buscar</button>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row espacior">
                     <input type="text" class="entradas" id="descripcion" name="descripcion" value="is a pokemon">
                 </div>
-                <div class="row">
-                    <div class="col-6" >
+                <div class="row espacior">
+                    <div class="container izquierdo" >
                         <img src="/Pokedex/assets/icons/flecha-izq.png" class="img-flechas">
-                    </div>
-                    <div class="col-6">
                         <img src="/Pokedex/assets/icons/flecha-der.png" class="img-flechas">
                     </div>
                 </div>
             </div>
-            <div class="col-6 alargado" >
-                <img src="assets/images/pokedex.jpg" class="img-fluid">
+            <div class="col-6 alargado">
+                <div class="container cblanco" >
+                    <h1>Info</h1>
+                    <div class="row">
+                        <div class="row">
+                            Type
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                Grass
+                            </div>
+                            <div class="col-6">
+                                Poisson
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
             </div>
         </div>
     </div>
