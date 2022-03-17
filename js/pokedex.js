@@ -17,6 +17,16 @@ const fetchPokemon = () => {
             (document.getElementById("attack")).value=0;
             document.getElementById("divhp").style.width ='0px';
             document.getElementById("divattack").style.width = '0px';
+            (document.getElementById("defense")).value=0;
+            document.getElementById("divdefense").style.width = '0px';
+            (document.getElementById("spattack")).value=0;
+            document.getElementById("divspattack").style.width = '0px';
+            (document.getElementById("spdefense")).value=0;
+            document.getElementById("divspdefense").style.width ='0px';
+            (document.getElementById("speed")).value=0;
+            document.getElementById("divspeed").style.width = '0px';
+            (document.getElementById("descripcion")).value="--";
+            (document.getElementById("movimientos")).value="--";
         }
         else {
             return res.json();
@@ -33,9 +43,22 @@ const fetchPokemon = () => {
             (document.getElementById("habilidadese")).value=data['abilities'][1]['ability']['name'];
             (document.getElementById("tipo1")).value=data['types'][0]['type']['name'];
             (document.getElementById("hp")).value=data['stats'][0]['base_stat'];
+            document.getElementById("divhp").style.width = data['stats'][0]['base_stat']+'%';
             (document.getElementById("attack")).value=data['stats'][1]['base_stat'];
-            document.getElementById("divhp").style.width = data['stats'][0]['base_stat']+'px';
-            document.getElementById("divattack").style.width = data['stats'][1]['base_stat']+'px';
+            document.getElementById("divattack").style.width = data['stats'][1]['base_stat']+'%';
+            (document.getElementById("defense")).value=data['stats'][2]['base_stat'];
+            document.getElementById("divdefense").style.width = data['stats'][2]['base_stat']+'%';
+            (document.getElementById("spattack")).value=data['stats'][3]['base_stat'];
+            document.getElementById("divspattack").style.width = data['stats'][3]['base_stat']+'%';
+            (document.getElementById("spdefense")).value=data['stats'][4]['base_stat'];
+            document.getElementById("divspdefense").style.width = data['stats'][4]['base_stat']+'%';
+            (document.getElementById("speed")).value=data['stats'][5]['base_stat'];
+            document.getElementById("divspeed").style.width = data['stats'][5]['base_stat']+'%';
+            movimi="Moves:  ";
+            for (var i = 0; i <data['moves'].length ; i++) {
+                movimi=movimi+data['moves'][i]['move']['name']+", ";
+             }
+            (document.getElementById("movimientos")).value=movimi;
             
             const url2 = `https://pokeapi.co/api/v2/characteristic/${data['id']}`;
             fetch(url2).then((res2) => {

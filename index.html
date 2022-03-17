@@ -44,6 +44,9 @@
                     <input type="text" class="entradas" id="descripcion" name="descripcion" value="Description" disabled>
                 </div>
                 <div class="row espacior">
+                    <textarea rows="4" class="entradatexto" cols="20" id="movimientos" name="movimientos" placeholder="Someone Moves" disabled></textarea>
+                </div>
+                <div class="row espacior">
                     <div class="col-3 justify-content-right align-items-right text-right">
                         <input type="text" class="entradas4"disabled>
                     </div>
@@ -88,7 +91,7 @@
                             <input type="text" class="entradas" id="habilidadese" name="habilidadese" disabled value="--">
                         </div>
                     </div>
-                    <div class="row fondoblanco justify-content-between">
+                    <div class="row fondoblanco justify-content-left">
                         <div class="row espacior">
                             <div class="col-2">
                                 <div class="texto">HP</div>
@@ -115,6 +118,59 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row espacior">
+                            <div class="col-2">
+                                <div class="texto">Defense</div>
+                            </div>
+                            <div class="col-2">
+                                <input type="number" class="entradas3" id="defense" name="defense" value="00" disabled>
+                            </div>
+                            <div class="col-6">
+                                <div class="progress progress-striped active " style="height: 30px;">
+                                    <div id="divdefense" class="progress-bar bg-warning" style="height: 30px; width: 0%; background-color: #8a8383;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row espacior">
+                            <div class="col-2 align-items-left justify-content-center">
+                                <div class="texto align-items-center">Special Attack</div>
+                            </div>
+                            <div class="col-2">
+                                <input type="number" class="entradas3" id="spattack" name="spattack" value="00" disabled>
+                            </div>
+                            <div class="col-6">
+                                <div class="progress progress-striped active " style="height: 30px;">
+                                    <div id="divspattack" class="progress-bar bg-info" style="height: 30px; width: 0%; background-color: #8a8383;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row espacior">
+                            <div class="col-2">
+                                <div class="texto">Special Defense</div>
+                            </div>
+                            <div class="col-2">
+                                <input type="number" class="entradas3" id="spdefense" name="spdefense" value="00" disabled>
+                            </div>
+                            <div class="col-6">
+                                <div class="progress progress-striped active " style="height: 30px;">
+                                    <div id="divspdefense" class="progress-bar" style="height: 30px; width: 0%; background-color: #8a8383;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row espacior">
+                            <div class="col-2 align-items-left justify-content-center">
+                                <div class="texto">Speed</div>
+                            </div>
+                            <div class="col-2">
+                                <input type="number" class="entradas3" id="speed" name="speed" value="00" disabled>
+                            </div>
+                            <div class="col-6">
+                                <div class="progress progress-striped active " style="height: 30px;">
+                                    <div id="divspeed" class="progress-bar progress-bar-purple" style="height: 30px; width: 0%; background-color: #8a8383;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
 
                 </div>

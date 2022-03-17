@@ -25,6 +25,22 @@
     font-weight:bold;
     text-align: center;
 }
+.entradatexto{
+  background:#91dfe9;
+  border-top-width: 10px;
+  border-right-width: 1em;
+  border-bottom-width: thick;
+  border-left-width: thin;
+  border: 1px solid #000000;
+  border-block-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  width: 550px;
+  height: 190px;
+  padding: 10px;
+  font-size:15px;
+  font-weight:bold;
+  text-align: center;
+}
 .entradas2{
     background:#91dfe9;
     border-top-width: 10px;
@@ -106,6 +122,7 @@
     border-block-color: rgb(0, 0, 0);
     border-radius: 30px;
     width: 1355px;
+    height: 900px;
   }
   .contenedorderecha {
     background:#ff0000;
@@ -151,9 +168,12 @@
   margin-right: 30px;
 }
 .texto{
-  font-size:25px;
+  font-size:18px;
   font-weight:bold;
-  width: 100px;
-  height: 30px;
-  padding: 10px;SS
+  width: 30px;
+  height: 50px;
+ 
+}
+.progress-bar-purple {
+  background-color: rgb(134, 3, 205) !important;
 }
