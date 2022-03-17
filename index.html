@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body class="poke">
-    <div class="contenedorizquierda">
+    <div class="contenedorizquierda justify-content-center align-items-center">
         <h1>Pokedex LaunchX</h1>
         <div class="row">
             <div class="col-6 alargado">
@@ -44,25 +44,69 @@
                     <input type="text" class="entradas" id="descripcion" name="descripcion" value="is a pokemon">
                 </div>
                 <div class="row espacior">
-                    <div class="container izquierdo" >
-                        <img src="/Pokedex/assets/icons/flecha-izq.png" class="img-flechas">
+                    <div class="col-6 align-items-left">
+                        <img src="/Pokedex/assets/icons/flecha-izq.png" class="img-flechas align-items-left">
+                    </div>
+                    <div class="col-6 align-items-left">
                         <img src="/Pokedex/assets/icons/flecha-der.png" class="img-flechas">
                     </div>
                 </div>
             </div>
             <div class="col-6 alargado">
-                <div class="container cblanco" >
+                <div class="container cblanco justify-content-center align-items-center text-center" >
                     <h1>Info</h1>
-                    <div class="row">
-                        <div class="row">
+                    <div class="row fondoblanco justify-content-between">
+                        <div class="row espacior justify-content-center align-items-center">
                             Type
                         </div>
-                        <div class="row">
+                        <div class="row espacior justify-content-center align-items-center">
                             <div class="col-6">
-                                Grass
+                                <input type="text" class="entradas2" id="tipo1" name="tipo1" value="Grass">
                             </div>
                             <div class="col-6">
-                                Poisson
+                                <input type="text" class="entradas2" id="tipo2" name="tipo2" value="Poison">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row fondoblanco justify-content-between">
+                        <div class="row espacior justify-content-center align-items-center">
+                            Abilities
+                        </div>
+                        <div class="row espacior justify-content-center align-items-center">
+                            <input type="text" class="entradas" id="habilidades" name="habilidades" value="Overgrow">
+                        </div>
+                        <div class="row espacior justify-content-center align-items-center">
+                            Hidden Abilities
+                        </div>
+                        <div class="row espacior justify-content-center align-items-center">
+                            <input type="text" class="entradas" id="habilidadese" name="habilidadese" value="Chlorophyll">
+                        </div>
+                    </div>
+                    <div class="row fondoblanco justify-content-between">
+                        <div class="row espacior">
+                            <div class="col-2">
+                                <div class="texto">HP</div>
+                            </div>
+                            <div class="col-2">
+                                <input type="number" class="entradas3" id="hp" name="hp" value="45">
+                            </div>
+                            <div class="col-6">
+                                <div class="progress progress-striped active " style="height: 30px;">
+                                    <div id="divhp" class="progress-bar bg-success" style="height: 30px; width: 45%; background-color: #8a8383;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row espacior">
+                            <div class="col-2">
+                                <div class="texto">Attack</div>
+                            </div>
+                            <div class="col-2">
+                                <input type="number" class="entradas3" id="attack" name="attack" value="50">
+                            </div>
+                            <div class="col-6">
+                                <div class="progress progress-striped active " style="height: 30px;">
+                                    <div id="divattack" class="progress-bar bg-danger" style="height: 30px; width: 50%; background-color: #8a8383;"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
