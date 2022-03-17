@@ -54,6 +54,18 @@
   font-size:25px;
   font-weight:bold;
 }
+.entradas4{
+  background:#000000;
+  border-top-width: 10px;
+  border-right-width: 1em;
+  border-bottom-width: thick;
+  border-left-width: thin;
+  border: 1px solid #000000;
+  border-block-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+}
 .izquierdo{
     justify-content: left;
     align-items: left;
@@ -63,7 +75,7 @@
 .boton{
     background:#91dfe9;
     color:#ffffff;
-    width: 100px;
+    width: 220px;
     height: 50px;
     border: 1px solid #000000;
     border-block-color: rgb(0, 0, 0);
