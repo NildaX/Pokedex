@@ -40,7 +40,6 @@ const fetchPokemon = () => {
             (document.getElementById("name")).value=data['name'];
             (document.getElementById("numero")).value="#00"+data['id'];
             (document.getElementById("habilidades")).value=data['abilities'][0]['ability']['name'];
-            (document.getElementById("habilidadese")).value=data['abilities'][1]['ability']['name'];
             (document.getElementById("tipo1")).value=data['types'][0]['type']['name'];
             (document.getElementById("hp")).value=data['stats'][0]['base_stat'];
             document.getElementById("divhp").style.width = data['stats'][0]['base_stat']+'%';
@@ -81,6 +80,7 @@ const fetchPokemon = () => {
              catch (e) {
                 document.getElementById("tipo2").style.display = "none";
              }
+             (document.getElementById("habilidadese")).value=data['abilities'][1]['ability']['name'];
 
             
             console.log(data['abilities'][0]['ability']['name']);
